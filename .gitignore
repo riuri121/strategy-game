@@ -1,0 +1,36 @@
+# Godot-specific ignores
+.godot/
+*.imported
+*.isoimport
+*.tres
+*.scn.remap
+*.gd.remap
+export.json
+export_presets.cfg
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*(txt|zip)
+.vs/
+.vscode/
+
+# Build artifacts
+build/
+bin/
+dist/
+
+# OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*~
+.project
+.pydevproject
+.settings/
+
+# IDE
+.idea/
+*.sublime-project
+*.sublime-workspace

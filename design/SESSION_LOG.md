@@ -54,12 +54,20 @@
 5. **Operation styles:** Basic, skeleton, fully manned (affects speed/cost)
 6. **Faction bonuses:** Passive abilities (mining, logistics, tech, diplomacy) apply to facilities
 
+#### Tech Stack Decision (Locked In)
+1. **Language:** Python (initial) + Rust (performance core, later)
+2. **Framework:** Arcade (UI/presentation layer)
+3. **Architecture:** Simulation core as separate library; clear API boundaries between simulation and presentation
+4. **Development model:** Solo with Sable as AI collaborator
+5. **Learning focus:** Systems programming + game architecture
+
 ### Next Steps
 1. Define **raw materials list** (5–8 types)
 2. Define **intermediates list** (TBD count)
 3. Define **recipes per facility type** (inputs, ratios, outputs)
 4. Sketch **Tech tree** structure
-5. Explore tech stack preferences (engine, language)
+5. Begin **architecture/API design** document (simulation core structure)
+6. Sketch initial **project structure** (Python modules, Rust crate layout)
 
 ### Notes
 - Dan is interested in using sub-agents for this project; testing agent workflow

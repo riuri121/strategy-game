@@ -49,26 +49,25 @@ One facility per resource:
 - Optimal recipe depends on local input availability and import costs
 - A "premium" recipe might require imports; a "local" recipe uses available inputs at lower cost
 
-### Operation Styles
+### Operation Styles (Locked Decision)
 
-Three modes for each facility:
+Every facility can operate in three modes:
 
-**Basic Automation:**
-- Slow production speed
-- Low labor/maintenance costs
-- High uptime (reliable)
+| Mode | Speed | Cost | Uptime | Use Case |
+|------|-------|------|--------|----------|
+| **Basic Automation** | Slow | Low | High | Low-priority resource chains; leave running unattended |
+| **Skeleton Crew** | Medium | Medium | Medium | Balanced approach; moderate output & cost |
+| **Fully Manned** | High | High | High | Rush production; high-value goods; critical chains |
 
-**Skeleton Crew:**
-- Medium production speed
-- Medium labor/maintenance costs
-- Medium uptime
+**Mechanics:**
+- Player can switch operation style per facility at any time
+- Each style has different input consumption rates and output rates
+- Exact ratios TBD, but proportional: Fully Manned ≈ 3× speed & cost vs. Basic
 
-**Fully Manned:**
-- High production speed
-- High labor/maintenance costs
-- High uptime
-
-**TBD:** Exact speed/cost ratios
+**Strategic depth:** Choose style based on:
+- Local resource availability (if bottlenecked, slow style preserves imports)
+- Profit margins (high-value goods → Fully Manned; commodity goods → Basic)
+- Cash flow (high upfront cost → Skeleton Crew for balance)
 
 ---
 

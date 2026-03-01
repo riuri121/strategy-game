@@ -19,7 +19,7 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 ### Phase 1 (MVP): Inner Solar System
 - **Locations:** Earth (market only), Moon, Mars, Asteroid Belt
 - **Mechanics:** Basic mining, factories, trade
-- **Factions:** 3 Earth factions (demand drivers), 2 space factions (competitors)
+- **Factions:** 4 Earth factions (demand drivers), 2+ space factions (competitors, configurable count)
 
 ### Phase 2: Economic Depth
 - Technology tree, more complex supply chains, faction diplomacy, military mechanics (blockades, etc.)
@@ -32,10 +32,11 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 ## Key Systems (High-Level)
 
 ### Economy
-- **Resources:** Raw materials (ore, minerals, rare earths) → refined metals → components → finished goods
-- **Markets:** Earth market (price-driven demand from factions), intra-system trade (player-to-faction or player-to-player)
+- **Resources:** Raw materials → intermediates → finished goods
+- **Markets:** Earth market (price-driven demand from factions), intra-system trade
 - **Profit:** Margins = (sell price - production cost - transport cost - facility cost)
-- **Currency:** Credits. Player starts with some capital; reinvestment is key.
+- **Currency:** Credits. Player starts with capital; reinvestment is key.
+- **Early-game bootstrap:** Earth exports cheap construction materials (unlimited supply) to help player build first facilities. Becomes uneconomical mid-game as space production scales.
 
 ### Factions
 
@@ -53,20 +54,23 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 ### Locations
 
 **Moon:**
-- High ore concentration; closer to Earth (lower transport costs)
+- High ore concentration; closest to Earth (lowest transport costs ~10%)
 - Limited real estate; mining saturation risk
 
 **Mars:**
 - Moderate resources; potential for self-sustaining colonies
-- Further from Earth (higher transport costs, longer supply chains)
+- Moderate distance to Earth (moderate transport costs ~20%)
 
 **Asteroid Belt:**
 - Rich in rare materials; no natural limit on expansion
-- Scattered locations; logistics are complex
+- Distant from Earth (high transport costs; exact formula TBD)
+- Logistics are complex
 
 **Earth:**
 - Market hub; never buildable (resource sink)
 - Demand fluctuates based on faction behavior
+
+**Distance mechanics:** Transport costs apply both ways (import and export). Goods become more expensive to import/export based on location distance.
 
 ### Time & Turns
 - **Pauseable real-time** preferred (can pause to make decisions, let it run)
@@ -86,13 +90,20 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 
 ## Design Questions / Open Decisions
 
-- [ ] Supply logistics: Abstract (instant delivery) or simulated (travel time, routes)?
-- [ ] Faction relationships: Can you ally, negotiate, or sabotage space factions?
-- [ ] Military mechanics: Direct combat, economic sabotage, both, or none initially?
-- [ ] Tech tree structure: Linear, branching, unlock-based?
+**Locked In:**
+- [x] Supply logistics: **Simulated with distance-based cost penalties** (not instant delivery)
+- [x] Earth factions: **USA, Europe, China, India** (4 permanent powers)
+- [x] Space factions: **MVP identical; configurable count** (future differentiation via starting conditions & abilities)
+- [x] Production tiers: **Raw materials → intermediates → finished goods** (3-tier system)
+- [x] Facility operation styles: **Basic Automation / Skeleton Crew / Fully Manned** (affects speed & cost)
+
+**TBD:**
+- [ ] Faction relationships with space factions: Can you ally, negotiate, or sabotage?
+- [ ] Military mechanics: Direct combat, economic sabotage, both, or deferred to Phase 2?
+- [ ] Tech tree structure: Linear, branching, or unlock-based progression?
 - [ ] UI paradigm: Classic RTS, spreadsheet/tycoon style, or hybrid?
-- [ ] Game length: Typical playthrough 10 hours? 50 hours? Open-ended?
-- [ ] Difficulty/Sandbox modes: Dynamic AI aggression, resource scarcity, etc.?
+- [ ] Game length: Typical playthrough 10, 50, or 100+ hours?
+- [ ] Difficulty/Sandbox modes: Dynamic AI aggression presets, resource scarcity variants?
 
 ---
 

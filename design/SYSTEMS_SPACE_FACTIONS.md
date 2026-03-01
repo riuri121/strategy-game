@@ -7,7 +7,7 @@ Space factions are AI-controlled corporations, identical to the player. They com
 
 ## MVP (Identical Factions)
 
-**Number of factions:** Game-start setting (TBD, not hardcoded)
+**Number of factions:** Configurable at game start (not hardcoded; TBD default, e.g., 2–4)
 
 **Starting state:** All space factions are mechanically identical to the player. They:
 - Start with some capital and a foothold location
@@ -55,18 +55,18 @@ Each faction runs a simplified economic loop:
 ## Player Interaction with Space Factions
 
 **Competition:**
-- You can't block them from building (locations can host multiple miners)
-- You can undercut their prices, steal their market share
-- You can compete for the same rare-deposit sites
+- Locations host multiple factions simultaneously (no exclusive claims)
+- You compete on price: undercut to steal market share
+- Economic competition only; military/sabotage is Phase 2+
 
 **No direct trade with space factions** (MVP):
 - You compete, don't cooperate
-- Future: could add alliances, sabotage, merger mechanics
+- Future: could add alliances, diplomacy, sabotage mechanics
 
 ---
 
 ## Open Questions
 
-- [ ] Can multiple factions mine the same location simultaneously, or is it exclusive?
 - [ ] Do space factions ever go bankrupt, or are they persistent?
-- [ ] Can player interfere with their operations (sabotage, blockade)?
+- [ ] Can player interfere with their operations (sabotage, blockade)? → **Deferred to Phase 2 (military mechanics)**
+- [ ] AI behavior depth: How reactive are space factions to market changes?

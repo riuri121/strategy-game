@@ -17,7 +17,7 @@ All factions demand the same **resource categories:**
 - Raw materials (ore, minerals, rare earths)
 - Intermediate products (refined metals, components)
 - Consumer goods (manufactured products)
-- Research materials (advanced tech inputs)
+- Research goods (advanced tech inputs; fuels Earth's tech research, produced by space factions)
 - Military goods (weapons, armor, equipment)
 
 **Demand levels shift based on internal events:**

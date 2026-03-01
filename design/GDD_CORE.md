@@ -42,12 +42,14 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 ### Factions
 
 **Earth Factions (3):**
+
 - Compete with each other; generate demand for specific goods
 - Set base prices on Earth goods
 - Do NOT compete with the player directly (they're the market)
 - May have political relationships that affect demand/supply
 
 **Space Factions (2):**
+
 - Compete with the player for mining sites, locations, and resources
 - May trade with you, blockade routes, or fight
 - Have their own production capabilities (threat/opportunity)
@@ -55,19 +57,23 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 ### Locations
 
 **Moon:**
+
 - High ore concentration; closest to Earth (lowest transport costs ~10%)
 - Limited real estate; mining saturation risk
 
 **Mars:**
+
 - Moderate resources; potential for self-sustaining colonies
 - Moderate distance to Earth (moderate transport costs ~20%)
 
 **Asteroid Belt:**
+
 - Rich in rare materials; no natural limit on expansion
 - Distant from Earth (high transport costs; exact formula TBD)
 - Logistics are complex
 
 **Earth:**
+
 - Market hub; never buildable (resource sink)
 - Demand fluctuates based on faction behavior
 

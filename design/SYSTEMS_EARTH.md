@@ -14,6 +14,7 @@ Each is a **pure demand sink**. They don't produce goods relevant to the game; t
 ### Demand Drivers
 
 All factions demand the same **resource categories:**
+
 - Raw materials (ore, minerals, rare earths)
 - Intermediate products (refined metals, components)
 - Consumer goods (manufactured products)
@@ -21,6 +22,7 @@ All factions demand the same **resource categories:**
 - Military goods (weapons, armor, equipment)
 
 **Demand levels shift based on internal events:**
+
 - Economic boom → increased demand across all categories
 - Internal conflict/war → spiked military demand
 - Political instability → reduced demand (economy contracts)
@@ -47,6 +49,7 @@ All factions demand the same **resource categories:**
 
 ### Demand System
 Each faction generates **demand orders** based on:
+
 - **Production capacity** (they need X tons of rare earths per quarter to maintain factories)
 - **Growth rate** (expanding factions need more; declining factions need less)
 - **Political dynamics** (if two factions ally, combined demand shifts)
@@ -90,7 +93,9 @@ Each faction generates **demand orders** based on:
 ## Faction Relationships & Dynamics
 
 ### Political Alliances
+
 Factions form alliances that affect:
+
 - **Trade routes** (allied factions trade with each other at discounts)
 - **Demand shifts** (allied factions coordinate resource needs)
 - **Opportunities for player** (if a faction is isolated, they're desperate buyers)
@@ -114,6 +119,7 @@ Each faction runs a simple economic AI:
 ## Player Interaction with Earth
 
 ### Export Flow
+
 1. Player builds factory/mine in space; produces goods
 2. Player loads goods onto transport (cost: credits/time/fuel)
 3. Transport hauls to Earth orbit
@@ -121,7 +127,9 @@ Each faction runs a simple economic AI:
 5. Player receives credits in bank
 
 ### Market Information
+
 Player can:
+
 - View each faction's current demand
 - View current prices per good
 - View price history (trending up/down?)
@@ -129,6 +137,7 @@ Player can:
 - Receive alerts when demand spikes or crashes
 
 ### Strategic Opportunities
+
 - **Monopoly play:** Be the only supplier of a rare good → set high prices
 - **Volume play:** Supply common goods cheap, profit on scale
 - **Speculation:** Buy low, sell high (if Earth goods can be transported to space?)

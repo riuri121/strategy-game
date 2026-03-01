@@ -18,7 +18,7 @@ Technology research is a **shared pool** where all factions (Earth + space) cont
   - **Base production:** Tied to current economic prosperity (faction-specific; see issue #TBD)
   - Current research budget allocation (how much they prioritize R&D)
   - Price and availability of research goods (if goods are scarce/expensive, research slows)
-- Space factions produce research goods → supply affects cost → affects Earth's research speed
+- Space factions produce research goods (via Research Goods Labs; see SYSTEMS_PRODUCTION.md) → supply affects cost → affects Earth's research speed
 - **Economic leverage:** Control research goods supply = control tech pace. Strong Earth economies research faster (even without space goods).
 - **Feedback loop:** Player's goods affect Earth prosperity → affects their research speed
 

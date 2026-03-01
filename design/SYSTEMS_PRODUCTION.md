@@ -24,7 +24,7 @@ One facility per resource:
 - Military goods factory
 - Consumer goods factory
 - Development goods factory
-- Research materials lab
+- Research goods lab (produces research goods for Earth's tech research)
 
 ---
 
@@ -75,12 +75,12 @@ Every facility can operate in three modes:
 
 Faction passive abilities apply to facilities:
 
-- **Mining Corp:** +10% extraction (mines only?)
-- **Logistics Specialist:** -10% transport costs (all facilities?)
-- **Tech Pioneer:** Tech research 15% faster (research labs only?)
-- **Diplomat:** Earth factions favor them (affects sale prices?)
+- **Mining Corp:** +10% extraction rate (mines/extractors only)
+- **Logistics Specialist:** -10% transport costs (all facilities)
+- **Tech Pioneer:** +15% POC completion speed (research labs & POC pursuits)
+- **Diplomat:** Earth factions favor them (affects sale prices & demand priority)
 
-**TBD:** Which bonuses apply to which facility types, exact values.
+**TBD:** Exact values, which bonuses stack, how they interact with operation styles.
 
 ---
 

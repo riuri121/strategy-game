@@ -18,11 +18,12 @@ A pauseable real-time/turn-based economic sandbox where the player controls a si
 
 ### Phase 1 (MVP): Inner Solar System
 - **Locations:** Earth (market only), Moon, Mars, Asteroid Belt
-- **Mechanics:** Basic mining, factories, trade
+- **Mechanics:** Basic mining, factories, trade, technology research
 - **Factions:** 4 Earth factions (demand drivers), 2+ space factions (competitors, configurable count)
+- **Tech system:** Shared research pool with POC mechanics (see TECH_TREE.md)
 
 ### Phase 2: Economic Depth
-- Technology tree, more complex supply chains, faction diplomacy, military mechanics (blockades, etc.)
+- Advanced technology progression, more complex supply chains, faction diplomacy, military mechanics (blockades, etc.)
 
 ### Phase 3: Expansion
 - More celestial bodies, deeper AI, emergent warfare, player alliances (if multiplayer considered).

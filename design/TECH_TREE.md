@@ -73,11 +73,16 @@ Each technology has **3 independent POCs**. Space factions (player + AI) can pur
 
 ## Open Questions
 
-- [ ] **Research goods consumption:** Can Earth factions also consume research goods, or space-only supply?
+**Answered:**
+- [x] **Research goods consumption:** Earth factions consume research goods (part of their research budgets). Space factions produce them (supply determines Earth research speed).
+- [x] **Faction priority:** Factions have **full control** over which POCs they pursue; not auto-allocated.
+
+**TBD:**
+- [ ] **Earth baseline production:** Does Earth have inherent research good production, or is it purely space-supplied?
+- [ ] **Space faction research consumption:** Do space factions also consume research goods (beyond producing them)?
 - [ ] **POC pursuit mechanics:** How does a faction "pursue" a POC? (Assign resources? Facility type? Special task?)
 - [ ] **POC timelines:** How long does a POC take to complete? (Fixed time? Depends on resources invested?)
-- [ ] **POC failure:** Can POCs fail, or are they guaranteed if pursued?
-- [ ] **Faction priority:** Can factions prioritize which POCs to pursue, or do they auto-allocate?
+- [ ] **POC failure:** Can POCs fail, or are they guaranteed once pursued?
 - [ ] **Tech count:** How many techs in MVP? (Enough to span Phase 1 scope?)
 - [ ] **Tech prerequisites:** Can techs depend on earlier techs, or flat research pool?
 - [ ] **Research speed balance:** How fast should a typical tech research take? (10 turns? 100 turns?)

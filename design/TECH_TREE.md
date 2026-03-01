@@ -30,7 +30,7 @@ Each technology has **3 independent POCs**. Space factions (player + AI) can pur
 ### Mechanics
 - **Pursuit:** Space faction chooses to pursue a POC (commits resources, time)
 - **Completion:** First faction to complete the POC earns the POC benefit
-- **Benefit types:** Faction-unique (player gets different bonus than AI gets)
+- **Benefit types:** Fixed per-POC (each POC has its own benefit; player and AI compete to claim them)
 - **Contribution to main research:** Completing a POC adds a **speed multiplier** to the shared research pool
 - **Stacking:** Multiple POC completions stack their multipliers
 
@@ -47,32 +47,26 @@ Each technology has **3 independent POCs**. Space factions (player + AI) can pur
 - **Core benefit:** Enables cloud skimming (harvesting volatile compounds from gas giants)
 - **New location unlock:** Gas giants become accessible
 - **POC #1 — Atmospheric Stability:**
-  - Player completion: +5% efficiency on cloud operations
-  - AI completion: -10% facility build cost for cloud scoops
+  - Benefit (to whoever completes): +5% efficiency on cloud operations
   - Speed bonus: ×1.2 research multiplier
 - **POC #2 — Heat Resistance:**
-  - Player completion: Cloud facilities require less maintenance
-  - AI completion: Cloud operations produce 10% more output
+  - Benefit: Cloud operations produce 10% more output
   - Speed bonus: ×1.15 research multiplier
 - **POC #3 — Gravity Wells:**
-  - Player completion: Cloud scoops can work in stronger gravity wells
-  - AI completion: Cloud scoops have longer operational lifespan
+  - Benefit: Cloud scoops can work in stronger gravity wells (access harsher environments)
   - Speed bonus: ×1.1 research multiplier
 
 ### Tech: Aerobic Steel Production
 - **Core benefit:** New factory recipe for producing steel (more efficient than baseline)
 - **Recipe unlocked:** Ore + chemicals → steel (replaces old recipe)
 - **POC #1 — Oxidation Control:**
-  - Player: +8% steel output per batch
-  - AI: -15% production time
+  - Benefit: -15% production time per steel batch
   - Speed bonus: ×1.2
 - **POC #2 — Catalyst Efficiency:**
-  - Player: Lower chemical input per unit steel
-  - AI: Better byproduct recovery
+  - Benefit: -10% chemical input per unit steel (reduces costs)
   - Speed bonus: ×1.15
 - **POC #3 — Temperature Precision:**
-  - Player: Reduced waste in production
-  - AI: Improved facility longevity
+  - Benefit: +8% steel output per batch
   - Speed bonus: ×1.1
 
 ---
@@ -93,6 +87,7 @@ Each technology has **3 independent POCs**. Space factions (player + AI) can pur
 ## Design Notes
 
 - **Economic depth:** Space supply → Earth research speed creates tight feedback loop
-- **Asymmetric rewards:** Player and AI benefits are different, forcing different strategic approaches
-- **Collaborative acceleration:** Even competing factions benefit from others' POC completions (mild cooperation incentive)
-- **Opportunity cost:** Ignoring POCs is viable but suboptimal (trade short-term profits for long-term tech disadvantage)
+- **POC competition:** Each POC is a discrete prize; factions compete to claim them first
+- **Asymmetric progress:** Player might complete POC #1 while AI claims POC #2 (race mechanic)
+- **Collaborative acceleration:** Even competing factions benefit from others' POC completions (shared speed multipliers)
+- **Opportunity cost:** Ignoring POCs is viable but suboptimal (lose unique benefits + speed boost)

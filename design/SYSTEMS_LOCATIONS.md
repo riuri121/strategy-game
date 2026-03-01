@@ -14,19 +14,28 @@ Current malus (placeholder, TBD exact formula):
 
 ## Production Chain (WIP)
 
-### Resource Tiers
+### Production Tier System (3-Tier)
 
-**Tier 1: Raw Materials** (extracted from locations)
-- TBD: 5–8 types (ore, minerals, rare earths, ice, etc.)
+**Tier 1: Raw Materials** (extracted from locations via mines/extractors)
+- 5–8 types (ore, minerals, rare earths, ice, metals, etc.) — TBD specifics
+- Produced at location-specific extraction facilities
+- Inputs: None (drawn from planet/asteroid)
+- Outputs: Raw material units
 
 **Tier 2: Intermediates** (refined/processed from raw materials)
-- TBD
+- 5+ types (refined metals, alloys, components, processed compounds, etc.) — TBD specifics
+- Produced at refineries, component factories, processors
+- Inputs: Raw materials
+- Outputs: Intermediate products
 
-**Tier 3: Finished Goods** (sold to Earth factions)
+**Tier 3: Finished Goods** (sold to Earth factions; final layer for economy)
 - Military goods (weapons, armor, defense systems)
 - Consumer goods (tools, equipment, manufactured products)
-- Development goods (construction materials, infrastructure)
+- Development goods (construction materials, infrastructure components)
 - Research materials (advanced tech inputs, rare components)
+- Produced at specialized factories and research labs
+- Inputs: Intermediates (and/or raw materials for some recipes)
+- Outputs: Finished goods sold to Earth
 
 ---
 
@@ -47,7 +56,8 @@ Current malus (placeholder, TBD exact formula):
 - TBD intermediates for factories/refineries
 
 **Capacity/Competition:**
-- Multiple factions can mine same location (TBD: is there a saturation point?)
+- Multiple factions can build mines at same location (economic competition, not exclusive)
+- No hard saturation limit, but player can monopolize via cheap prices
 - Space elevator potential (future tech unlock?)
 
 **Strategic role:**
@@ -71,12 +81,14 @@ Current malus (placeholder, TBD exact formula):
 - TBD intermediates for factories/refineries
 
 **Capacity/Competition:**
-- TBD: limited building slots, or unlimited sprawl?
+- Multiple factions can build at same location (economic competition)
+- No hard saturation limit
+- Less crowded than Moon; opportunity for early expansion
 
 **Strategic role:**
 - Mid-game expansion; colony potential
-- Less crowded than Moon
 - Foundation for long-term independence from Earth
+- Strategic hub for reaching Asteroid Belt
 
 ---
 
@@ -95,13 +107,15 @@ Current malus (placeholder, TBD exact formula):
 - TBD intermediates for mining operations
 
 **Capacity/Competition:**
-- Unlimited expansion (no saturation)
-- Supply logistics are expensive
+- Unlimited expansion (no saturation; many scattered sites)
+- Multiple factions can operate independently (low crowding)
+- High logistics costs make it less attractive early-game
 
 **Strategic role:**
 - Late-game specialization; high-risk, high-reward
-- Only profitable if you can manage logistics
-- Source of rare materials for premium prices
+- Only profitable if you can manage transport costs
+- Source of rare materials commanding premium prices
+- Gateway to strategic depth and economic dominance
 
 ---
 
@@ -117,9 +131,12 @@ Each location has:
 
 ## Open Questions
 
-- [ ] Can multiple factions mine the same location, or is it exclusive?
-- [ ] Do locations have saturation/capacity limits, or unlimited scaling?
-- [ ] How do you move goods between locations (Moon → Mars)? Separate transport cost?
-- [ ] Can you store goods at a location, or do they sell immediately?
+**Locked In:**
+- [x] Multiple factions at same location: **Yes (economic competition only)**
+- [x] Capacity limits: **No hard saturation; economic forces limit growth**
+
+**TBD:**
+- [ ] How do you move goods between locations (Moon → Mars)? Are inter-location transport costs separate from Earth distance costs?
+- [ ] Can you store goods at a location, or do they sell/consume immediately?
 - [ ] Do locations ever deplete (ore runs out), or are they infinite?
-- [ ] How do you establish a location initially? (Build settlement first? Research unlock?)
+- [ ] How do you establish a location initially? (Build settlement first? Automatic unlock? Research milestone?)

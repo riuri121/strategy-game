@@ -1,4 +1,4 @@
-# Godot-specific ignores
+# Godot-specific ignores (deprecated)
 .godot/
 *.imported
 *.isoimport
@@ -8,6 +8,50 @@
 export.json
 export_presets.cfg
 
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Rust-specific ignores
+/target/
+Cargo.lock
+*.rlib
+*.rmeta
+*.rda
+.rustup/
+
 # Mono-specific ignores
 .mono/
 data_*/
@@ -16,9 +60,7 @@ mono_crash.*(txt|zip)
 .vscode/
 
 # Build artifacts
-build/
 bin/
-dist/
 
 # OS specific
 .DS_Store
